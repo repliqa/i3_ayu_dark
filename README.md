@@ -6,6 +6,8 @@
  - polybar - as the status bar
  - tmux - for terminal multiplexing
  - nvchad - for customizing neovim
+ - Fira Code - as font 
+ - flameshot - as screenshot utility
 
 ### How to use 
 Simply run `git clone https://github.com/repliqa/user_config.git ~/.config/`

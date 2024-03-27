@@ -185,20 +185,16 @@ bindsym $mod+r mode "resize"
 #	position top
 # }
 
-# Custom
+### CUSTOM - STARTS HERE 
 bindsym $mod+Ctrl+l exec --no-startup-id i3lock # Locks the screen
 bindsym Print exec --no-startup-id flameshot gui
 # bindsym Ctrl+Shift+r exec --no-startup-id xfce4-terminal -e ranger
 bindsym Ctrl+Shift+up exec --no-startup-id xrandr --output LVDS-1 --brightness $(($(xrandr --verbose | grep Brightness | cut -d ' ' -f 2) + 0.1))
 bindsym XF86MonBrightnessDown exec --no-startup-id xrandr --output LVDS-1 --brightness $(($(xrandr --verbose | grep Brightness | cut -d ' ' -f 2) - 0.1))
 
-# exec_always --no-startup-id polybar --config=~/.config/polybar/config.ini main
-exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
-# exec_always --no-startup-id picom -bf -i 0.95 -D 0
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/solid_black.jpg
 exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini
 
-# gaps inner 0
-# gaps outer 0
-# for_window [class="^.*"] border pixel 0
-
 client.focused          #000000 #ff8f40 #000000 #2e9ef4 #285577
+
+### CUSTOM - ENDS HERE
